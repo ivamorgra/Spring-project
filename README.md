@@ -1,6 +1,7 @@
 # Spring-project
 App web using Spring Boot
-
+Autor del proyecto: Iván Moreno Granado
+Contacto: ivan.moreno.granado@gmail.com
 Comienzo del proyecto: 4/7/2021
 
 # Novedades
