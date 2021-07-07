@@ -52,27 +52,19 @@
       <button type="button" class="btn btn-primary">Botón de prueba</button>
     </div>
 
-    <div class="row">
-      <div class="col-4">
+    <div  class="row">
+      <div th:each= "post : ${posts}" class="col-4">
       <div class="card">
-        <img src="https://ep01.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572453030_noticia_normal.jpg" class="card-img-top" alt="Sabana tree">
+        <img th:src="${post.urlImg}" class="card-img-top" alt="Sabana tree">
         <div class="card-body">
-          <h5 class="card-title">Sabana Free</h5>
-          <p class="card-text">This is a picture to test the application.</p>
+          <h5 th:text="${post.titulo}" class="card-title">Sabana Free</h5>
+          <p th:text="${post.description}" class="card-text">This is a picture to test the application.</p>
           <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
     </div>
 
-      <div class="col-4">
-      <div class="card">
-        <img src="https://st.depositphotos.com/1020341/4233/i/600/depositphotos_42333899-stock-photo-portrait-of-huge-beautiful-male.jpg" class="card-img-top" alt="Sabana Lion">
-        <div class="card-body">
-          <h5 class="card-title">The Lion King</h5>
-          <p class="card-text">What a beatiful Lion. Grrr</p>
-          <a href="/hola/lion" class="btn btn-primary">Go to description</a>
-        </div>
-      </div>
+
 
       </div>
     </div>
